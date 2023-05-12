@@ -1,0 +1,41 @@
+$color-main: #E4242D;
+$color-secundary:#ffffff;
+
+@mixin btn-style{
+    background-color: $color-main;
+    color: $color-secundary;
+    border-radius: .5rem;
+    border:solid 1px $color-main;
+        &:hover{
+            border:solid 1px $color-main;
+            background-color: $color-secundary;
+            color: $color-main;
+            box-shadow: 0 0 1rem $color-main;
+        }
+}
+
+.btn-main{
+    @include btn-style;
+    font-weight: 600;
+    padding: .5rem;
+
+    &-s{
+        @include btn-style;
+        font-size: .7rem;
+        font-weight: 800;
+        padding: .3rem;
+    }
+
+}
+
+.planes-hogar{
+    padding: 2rem;
+}
+
+.plan-card{
+    width: 20rem;
+    height: 30rem;
+    border:none;
+    border-radius: .5rem;
+    box-shadow: 0 0 .1rem $color-main;
+}
