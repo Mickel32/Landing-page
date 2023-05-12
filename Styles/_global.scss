@@ -1,0 +1,12 @@
+.planes-hogar{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+        .container-plan{
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            justify-content: space-around;
+        }
+}
+

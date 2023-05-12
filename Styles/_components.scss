@@ -28,14 +28,32 @@ $color-secundary:#ffffff;
 
 }
 
-.planes-hogar{
-    padding: 2rem;
-}
-
 .plan-card{
+    display: flex;
     width: 20rem;
     height: 30rem;
     border:none;
     border-radius: .5rem;
-    box-shadow: 0 0 .1rem $color-main;
+    box-shadow: 0.1rem .1rem .5rem $color-main;   
+    background: linear-gradient(0deg, rgba(195, 34, 34, 0.214) -30%, rgba(255, 255, 255, 0.603) 100%);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    justify-content: center;
+        .title-plan{
+            display: flex;
+            margin-top: .09rem;
+            background-color: #626262e6;
+            color: $color-secundary;
+            border-top: none;
+            border-radius: 0 0 .5rem .5rem ;            
+            width: 60%;
+            height: 6%;
+            box-shadow: 0  0 .5rem #626262e6;  
+            h3{
+                padding: .2rem 0 0;
+                width: 100%;
+                text-align: center;
+                font-size: 1.2rem;
+            }
+        }
 }
