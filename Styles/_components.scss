@@ -14,6 +14,22 @@ $color-secundary:#ffffff;
         }
 }
 
+@mixin speed-style{
+    display:flex;
+    height: 3rem;
+    padding: 0 2rem;
+    gap: .7rem;
+    align-items: center;
+        img{
+            height: 1.5rem;
+        }
+        p{
+            padding-top: 1rem;
+            font-weight: 700;
+            font-style: italic
+        }
+}
+
 .btn-main{
     @include btn-style;
     font-weight: 600;
@@ -30,6 +46,7 @@ $color-secundary:#ffffff;
 
 .plan-card{
     display: flex;
+    flex-direction: column;
     width: 20rem;
     height: 30rem;
     border:none;
@@ -38,11 +55,11 @@ $color-secundary:#ffffff;
     background: linear-gradient(0deg, rgba(195, 34, 34, 0.214) -30%, rgba(255, 255, 255, 0.603) 100%);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
-    justify-content: center;
         .title-plan{
+            margin-left: 20%;
             display: flex;
             margin-top: .09rem;
-            background-color: #626262e6;
+            background-color: #da291c;
             color: $color-secundary;
             border-top: none;
             border-radius: 0 0 .5rem .5rem ;            
@@ -55,5 +72,14 @@ $color-secundary:#ffffff;
                 text-align: center;
                 font-size: 1.2rem;
             }
+        }
+        .speed{
+            font-size: 2rem;
+            margin-top: 3rem;
+            @include speed-style;
+            
+        }
+        .promo-speed{
+            @include speed-style;
         }
 }
