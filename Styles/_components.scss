@@ -21,7 +21,7 @@ $color-secundary:#ffffff;
     gap: .7rem;
     align-items: center;
         img{
-            height: 1.5rem;
+            height: 2rem;
         }
         p{
             padding-top: 1rem;
@@ -83,3 +83,4 @@ $color-secundary:#ffffff;
             @include speed-style;
         }
 }
+
