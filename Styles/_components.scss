@@ -62,6 +62,11 @@ $color-secundary:#ffffff;
     display: none;
 }
 
+.container-plan{
+    display: flex;
+    gap: 2rem;
+}
+
 .plan-card-dsc{
     display: flex;
     flex-direction: column;
@@ -216,4 +221,6 @@ $color-secundary:#ffffff;
     
 
 }
+
+
 
