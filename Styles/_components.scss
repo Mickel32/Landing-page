@@ -289,6 +289,14 @@ $color-secundary:#ffffff;
     100% { text-shadow: 1px 1px 0px $color-secundary; } 
 }
 
+.cont-carrusel{
+    display: flex;
+    justify-content: right;
+    // img{
+    //     width: 90%;
+    // }
+}
+
 
 
 
