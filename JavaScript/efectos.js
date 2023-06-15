@@ -10,7 +10,7 @@ function fadeInNextImage() {
   const nextIndex = (currentIndex + 1) % images.length;
   const nextImage = document.getElementById(images[nextIndex]);
 
-  if (interrumpir = true){
+  if (interrumpir == true){
     setTimeout(fadeInNextImage, 5000);
     fadeInNextImage();
     interrumpir = false;
