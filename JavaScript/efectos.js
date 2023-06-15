@@ -3,18 +3,12 @@ const punto = ['punto1', 'punto2', 'punto3']
 var currentIndex = 0;
 let interrumpir = false;
 
-
+while (interrumpir == false){
 function fadeInNextImage() {
 
   const currentImage = document.getElementById(images[currentIndex]);
   const nextIndex = (currentIndex + 1) % images.length;
   const nextImage = document.getElementById(images[nextIndex]);
-
-  if (interrumpir == true){
-    setTimeout(fadeInNextImage, 5000);
-    fadeInNextImage();
-    interrumpir = false;
-  }
 
   if (currentIndex == 0){
     pr2.classList.add('activo');
@@ -38,7 +32,12 @@ function fadeInNextImage() {
 }
 
 setInterval(fadeInNextImage, 5000);
+}
 
+function iniciar(){
+  fadeInNextImage();
+  interrumpir =false;
+}
 
 // function iniciar(){
 //     interrumpir = false;
