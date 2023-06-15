@@ -425,6 +425,28 @@
   color: #ffffff;
 }
 
+.redes {
+  z-index: 1;
+  height: 2rem;
+  right: 0.5rem;
+  top: 70vh;
+  position: fixed;
+}
+.redes img {
+  width: 3rem;
+}
+.redes a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000000;
+}
+.redes a p {
+  font-size: 0.8rem;
+}
+
 .planes-hogar {
   position: relative;
   margin-top: 2rem;
