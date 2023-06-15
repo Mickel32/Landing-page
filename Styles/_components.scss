@@ -321,15 +321,92 @@ $color-secundary:#ffffff;
             list-style: none;   
             .punto{
                 border-radius: 2rem;
-                width: 3rem;
+                width: 1rem;
                 height: 1rem;
-                border: solid 1px black;
+                border: solid 1px rgb(187, 187, 187);
             }
             .punto.activo{
                     background-color: $color-main;
             }
         }
      }
+}
+
+.contactanos-form{
+    background-color: #ffffffca;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 6rem;
+    right: 3rem;
+    width: 28rem;
+    height: 23rem;
+    z-index: 1;
+    border-radius: 1rem;
+    align-items: center;
+    .contactanos{
+        @include btn-style()
+    }
+    .contenido{
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 100%;
+        }
+        .text-cont{
+            display: flex;
+            flex-direction: column;
+            .text1{
+                font-size: 1.8rem;
+                font-weight: bold;
+            }
+            p{
+                margin: 0;
+                text-align: center;
+                font-size: 1rem;
+            }
+        }
+        
+    }
+    input{
+        width: 85%;
+        border-radius: .5rem;
+        height: 2.5rem;
+        text-align: center;
+        border: none;
+        background-color: #aeaeae;
+        color: $color-secundary;
+    }
+    input::placeholder{
+        color: $color-secundary;
+    }
+    .contactanos{
+        margin-top: .7rem;
+        font-size: 1.5rem;
+    }
+    .terminos{
+        margin-top: 1.5rem;
+        font-size: .5rem;
+        font-weight: 600;
+    }
+    .titulo{
+        padding: .2rem 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem 1rem 0 0 ;
+        height: 4rem;
+        width: 100%;
+        background-color: $color-main;
+        h3{
+            font-size: 2.5rem;
+            color: $color-secundary;
+        }
+    }
+
 }
 
 

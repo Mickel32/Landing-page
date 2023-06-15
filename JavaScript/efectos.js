@@ -1,104 +1,44 @@
-const images = ['promo1', 'promo2', 'promo3'];
-const punto = ['punto1', 'punto2', 'punto3']
-var currentIndex = 0;
-let interrumpir = false;
+document.addEventListener('DOMContentLoaded', function() {
+  var sliderImages = document.querySelectorAll('.imagenes img');
+  var sliderNavItems = document.querySelectorAll('.puntos li');
 
-while (interrumpir == false){
-function fadeInNextImage() {
+  var currentIndex = 0;
+  var timeout;
 
-  const currentImage = document.getElementById(images[currentIndex]);
-  const nextIndex = (currentIndex + 1) % images.length;
-  const nextImage = document.getElementById(images[nextIndex]);
+  function changeSlide(index) {
+    // Actualizar clases de imágenes y elementos de navegación
+    sliderImages[currentIndex].classList.remove('activo');
+    sliderNavItems[currentIndex].classList.remove('activo');
 
-  if (currentIndex == 0){
-    pr2.classList.add('activo');
-    pr1.classList.remove('activo');
-    pr3.classList.remove('activo');
-  } else if  (currentIndex == 1){
-    pr3.classList.add('activo');
-    pr1.classList.remove('activo');
-    pr2.classList.remove('activo');
-  }else {
-    pr1.classList.add('activo');
-    pr2.classList.remove('activo');
-    pr3.classList.remove('activo'); 
+    sliderImages[index].classList.add('activo');
+    sliderNavItems[index].classList.add('activo');
+
+    currentIndex = index;
   }
 
-  currentImage.style.opacity = '0';
-  nextImage.style.opacity = '1';
+  function nextSlide() {
+    var newIndex = (currentIndex + 1) % sliderImages.length;
+    changeSlide(newIndex);
+    startTimer();
+  }
 
-  currentIndex = nextIndex;
-  
-}
+  function startTimer() {
+    clearTimeout(timeout);
+    timeout = setTimeout(nextSlide, 5000);
+  }
 
-setInterval(fadeInNextImage, 5000);
-}
+  // Agregar eventos de clic a los elementos de navegación
+  for (var i = 0; i < sliderNavItems.length; i++) {
+    (function(index) {
+      sliderNavItems[index].addEventListener('click', function() {
+        changeSlide(index);
+        startTimer();
+      });
+    })(i);
+  }
 
-// function iniciar(){
-//   fadeInNextImage();
-//   interrumpir =false;
-// }
-
-// function iniciar(){
-//     interrumpir = false;
-//     fadeInNextImage();
-//   }
-
-// // const punto = document.querySelectorAll('.punto')
-
-// // punto.forEach ((cadaPunto, i)=>{
-// //   punto[i].addEventListener('click',()=>{
-// //     punto.forEach((cadaPunto, i)=>{
-
-// //       punto[i].classList.remove('activo')
-// //       imagen[i].classList.remove('activo')
-// //     })
-// //     punto[i].classList.add('activo')
-// //     imagen[i].classList.add('activo')
-// //     setTimeout(fadeInNextImage, 10000);
-// //     let currentIndex = 0; 
-// //     fadeInNextImage();
-// //   })
-// // })
-
-'use strict'
-
-const pr1 = document.getElementById('punto1');
-const pr2 = document.getElementById('punto2');
-const pr3 = document.getElementById('punto3');
-const img1 = document.getElementById('promo1');
-const img2 = document.getElementById('promo2');
-const img3 = document.getElementById('promo3');
-
-pr1.addEventListener('click',()=>{
-  interrumpir = true;
-  pr1.classList.add('activo');
-  pr2.classList.remove('activo');
-  pr3.classList.remove('activo');
-  img1.classList.add('activo');
-  img2.classList.remove('activo');
-  img3.classList.remove('activo');
-})
-
-pr2.addEventListener('click',()=>{
-  interrumpir = true;
-  pr2.classList.add('activo');
-  pr1.classList.remove('activo');
-  pr3.classList.remove('activo');
-  img2.classList.add('activo');
-  img1.classList.remove('activo');
-  img3.classList.remove('activo');
-})
-
-pr3.addEventListener('click',()=>{
-  interrumpir = true;
-  pr3.classList.add('activo');
-  pr1.classList.remove('activo');
-  pr2.classList.remove('activo');
-  img3.classList.add('activo');
-  img1.classList.remove('activo');
-  img2.classList.remove('activo');
-})
-
-
+  // Iniciar el slider
+  changeSlide(0);
+  startTimer();
+});
 
