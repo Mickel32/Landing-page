@@ -34,10 +34,10 @@ function fadeInNextImage() {
 setInterval(fadeInNextImage, 5000);
 }
 
-function iniciar(){
-  fadeInNextImage();
-  interrumpir =false;
-}
+// function iniciar(){
+//   fadeInNextImage();
+//   interrumpir =false;
+// }
 
 // function iniciar(){
 //     interrumpir = false;
