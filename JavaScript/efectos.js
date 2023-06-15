@@ -10,11 +10,11 @@ function fadeInNextImage() {
   const nextIndex = (currentIndex + 1) % images.length;
   const nextImage = document.getElementById(images[nextIndex]);
 
-  // if (interrumpir = true){
-  //   setTimeout(fadeInNextImage, 5000);
-  //   fadeInNextImage();
-  //   interrumpir = false;
-  // }
+  if (interrumpir = true){
+    setTimeout(fadeInNextImage, 5000);
+    fadeInNextImage();
+    interrumpir = false;
+  }
 
   if (currentIndex == 0){
     pr2.classList.add('activo');
