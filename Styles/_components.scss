@@ -289,13 +289,49 @@ $color-secundary:#ffffff;
     100% { text-shadow: 1px 1px 0px $color-secundary; } 
 }
 
+
+
 .cont-carrusel{
-    display: flex;
-    justify-content: right;
-    // img{
-    //     width: 90%;
-    // }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 16.8fr 1fr;
+    .imagenes{
+        position: relative;
+        display: flex;
+        justify-content: right;
+        img{
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .img.activo{
+            opacity: 1;
+        }
+     }
+     .selectores{
+        height: 2rem;
+        width: 100%;
+        .puntos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            gap: 2rem;  
+            list-style: none;   
+            .punto{
+                border-radius: 2rem;
+                width: 3rem;
+                height: 1rem;
+                border: solid 1px black;
+            }
+            .punto.activo{
+                    background-color: $color-main;
+            }
+        }
+     }
 }
+
 
 
 
