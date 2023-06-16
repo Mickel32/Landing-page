@@ -2,13 +2,18 @@
     position: relative;
     margin-top: 2rem;
     display: flex;
-    justify-content: center;
+    width: 300%;
+    .contenedor-carrusel{
+        position: relative;
+        width: 100%;
+        display: flex;
         .container-plan{
+            width: calc(100% / 3);
             display: flex;
-            flex-direction: row;
-            width: 90%;
             justify-content: space-around;
+            padding: 0  6rem;
         }
+    } 
 }
 
 main{
@@ -16,6 +21,8 @@ main{
     display: flex;
     flex-direction: column;
     padding: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .benefits{

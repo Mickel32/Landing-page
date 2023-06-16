@@ -28,13 +28,31 @@
   box-shadow: 0 0 1rem #E4242D;
 }
 
-.container-plan1 {
-  display: none;
+.carrusel-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: #494B4D;
+  color: #ffffff;
+  border-radius: 100%;
+  font-size: 3rem;
+  padding: 0 1rem 0.5rem;
+  position: absolute;
+  cursor: pointer;
 }
 
-.container-plan {
-  display: flex;
-  gap: 2rem;
+.btn-left {
+  top: 50%;
+  left: 4rem;
+  z-index: 1;
+}
+
+.btn-right {
+  top: 50%;
+  left: 100rem;
+  z-index: 1;
 }
 
 .plan-card-dsc {
@@ -451,13 +469,18 @@
   position: relative;
   margin-top: 2rem;
   display: flex;
-  justify-content: center;
+  width: 300%;
 }
-.planes-hogar .container-plan {
+.planes-hogar .contenedor-carrusel {
+  position: relative;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  width: 90%;
+}
+.planes-hogar .contenedor-carrusel .container-plan {
+  width: 33.3333333333%;
+  display: flex;
   justify-content: space-around;
+  padding: 0 6rem;
 }
 
 main {
@@ -465,6 +488,8 @@ main {
   display: flex;
   flex-direction: column;
   padding: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .benefits {

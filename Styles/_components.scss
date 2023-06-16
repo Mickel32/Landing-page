@@ -58,14 +58,32 @@ $color-secundary:#ffffff;
 
 }
 
-
-.container-plan1{
-    display: none;
+.carrusel-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:3rem;
+    width: 3rem;
+    background-color: #494B4D;
+    color: #ffffff;
+    border-radius: 100%;
+    font-size: 3rem;
+    padding: 0 1rem .5rem;
+    position: absolute;
+    cursor: pointer;
 }
 
-.container-plan{
-    display: flex;
-    gap: 2rem;
+
+.btn-left{
+    top: 50%;
+    left: 4rem;
+    z-index: 1;
+}
+
+.btn-right{
+    top: 50%;
+    left: 100rem;
+    z-index: 1;
 }
 
 .plan-card-dsc{

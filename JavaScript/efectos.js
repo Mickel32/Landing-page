@@ -1,3 +1,4 @@
+//Codigo para Banner descuentos con formulario de llamame
 document.addEventListener('DOMContentLoaded', function() {
   var sliderImages = document.querySelectorAll('.imagenes img');
   var sliderNavItems = document.querySelectorAll('.puntos li');
@@ -41,4 +42,52 @@ document.addEventListener('DOMContentLoaded', function() {
   changeSlide(0);
   startTimer();
 });
+
+//Banner de planes
+
+var iteration = 0;
+const next = document.querySelector('.btn-right');
+const previous = document.querySelector('.btn-left');
+const container = document.querySelector('.contenedor-carrusel');
+const recorrido = -(100 / 3);
+var conteo = 0;
+
+
+
+  function nextSlide(){
+    if (iteration <2 ){
+      conteo = iteration +1;
+      let operation = conteo * recorrido;
+      container.style.transform = `translateX(${operation}%)`;
+      iteration = conteo;
+    } else{
+      conteo = 1;
+      previousSlide();
+    }
+    
+  }
+
+next.addEventListener('click', function(){
+  nextSlide();
+})
+
+function previousSlide(){
+  if (iteration < 0){
+    conteo = 0;
+    nextSlide();
+  } else{
+  conteo = iteration -1;
+  let operation = iteration * recorrido;
+  container.style.transform = `translateX(${operation}%)`;
+  iteration = conteo;
+}
+}
+
+previous.addEventListener('click', function(){
+  previousSlide();
+})
+
+
+
+
 
