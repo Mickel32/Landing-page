@@ -58,21 +58,6 @@ $color-secundary:#ffffff;
 
 }
 
-.carrusel-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:3rem;
-    width: 3rem;
-    background-color: #494B4D;
-    color: #ffffff;
-    border-radius: 100%;
-    font-size: 3rem;
-    padding: 0 1rem .5rem;
-    position: absolute;
-    cursor: pointer;
-}
-
 
 .btn-left{
     top: 50%;
@@ -308,7 +293,6 @@ $color-secundary:#ffffff;
 }
 
 
-
 .cont-carrusel{
     display: grid;
     grid-template-columns: 1fr;
@@ -446,6 +430,30 @@ $color-secundary:#ffffff;
         p{
             font-size: .8rem;
         }
+    }
+}
+
+.btn-mov{
+    position: absolute;
+    width: calc(100% / 3);
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+    .carrusel-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:3rem;
+        width: 3rem;
+        background-color: #494B4D;
+        color: #ffffff;
+        border-radius: 100%;
+        font-size: 3rem;
+        padding: 0 1rem .5rem;
+        // position: absolute;
+        cursor: pointer;
     }
 }
 

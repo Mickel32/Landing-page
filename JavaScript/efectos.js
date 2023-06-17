@@ -52,29 +52,25 @@ const container = document.querySelector('.contenedor-carrusel');
 const recorrido = -(100 / 3);
 var conteo = 0;
 
-
-
-  function nextSlide(){
-    if (iteration <2 ){
-      conteo = iteration +1;
-      let operation = conteo * recorrido;
-      container.style.transform = `translateX(${operation}%)`;
-      iteration = conteo;
-    } else{
-      conteo = 1;
-      previousSlide();
-    }
-    
-  }
-
 next.addEventListener('click', function(){
   nextSlide();
 })
 
+  function nextSlide(){
+    if (iteration >1 ){
+      conteo = 1;
+    } else{
+      conteo = iteration +1;
+      let operation = conteo * recorrido;
+      container.style.transform = `translateX(${operation}%)`;
+      iteration = conteo;
+    }
+    
+  }
+
 function previousSlide(){
   if (iteration < 0){
     conteo = 0;
-    nextSlide();
   } else{
   conteo = iteration -1;
   let operation = iteration * recorrido;
