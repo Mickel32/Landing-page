@@ -2,16 +2,20 @@
     position: relative;
     margin-top: 2rem;
     display: flex;
-    width: 300%;
+    width: auto;
+    overflow: hidden;
     .contenedor-carrusel{
-        position: relative;
-        width: 100%;
         display: flex;
+        justify-content: center;
+        width: 100%;
+        overflow: hidden;
         .container-plan{
-            width: calc(100% / 3);
+            overflow: hidden;
+            width: 83%;
             display: flex;
-            justify-content: space-around;
-            padding: 0  6rem;
+            gap: 5rem;
+            padding: 0 1rem;
+            // justify-content: space-around;
         }
     } 
 }
@@ -48,7 +52,8 @@ main{
 
 .carrusel-hogar{
     position: relative;
-    height: 55vh;
+    // height: 55vh;
+
 }
 
 

@@ -130,17 +130,11 @@ $color-secundary:#ffffff;
         width: 100%;
         .img-promo{
             margin-top: -1rem;
-            // height: 7rem;
             display: flex;
             flex-direction: column;
-            padding: 0  1rem;
+            padding: 0  1.5rem;
             .text-promo{
                 @include text-promo;
-            }
-            img{
-                width: 100%;
-                height: 40%;
-
             }
         }
         .value-promo{
@@ -294,14 +288,17 @@ $color-secundary:#ffffff;
 
 
 .cont-carrusel{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 16.8fr 1fr;
+    width: 100%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .imagenes{
         position: relative;
         display: flex;
         justify-content: right;
         img{
+            width: 95%;
             position: absolute;
             opacity: 0;
             transition: opacity 1s ease-in-out;
@@ -313,6 +310,7 @@ $color-secundary:#ffffff;
      .selectores{
         height: 2rem;
         width: 100%;
+        z-index: 1;
         .puntos{
             display: flex;
             flex-direction: row;
@@ -328,7 +326,7 @@ $color-secundary:#ffffff;
                 border: solid 1px rgb(187, 187, 187);
             }
             .punto.activo{
-                    background-color: $color-main;
+                background-color: $color-main;
             }
         }
      }
@@ -435,7 +433,7 @@ $color-secundary:#ffffff;
 
 .btn-mov{
     position: absolute;
-    width: calc(100% / 3);
+    width: 100%;
     display: flex;
     height: 100%;
     justify-content: space-between;

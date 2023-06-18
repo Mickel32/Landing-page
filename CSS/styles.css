@@ -128,17 +128,13 @@
   margin-top: -1rem;
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 .plan-card-dsc .value .img-promo .text-promo {
   line-height: 1.2rem;
   font-size: 1.5rem;
   color: #E4242D;
   font-weight: 800;
-}
-.plan-card-dsc .value .img-promo img {
-  width: 100%;
-  height: 40%;
 }
 .plan-card-dsc .value .value-promo {
   padding: 0 1.5rem;
@@ -304,9 +300,11 @@
   }
 }
 .cont-carrusel {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 16.8fr 1fr;
+  width: 100%;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .cont-carrusel .imagenes {
   position: relative;
@@ -314,6 +312,7 @@
   justify-content: right;
 }
 .cont-carrusel .imagenes img {
+  width: 95%;
   position: absolute;
   opacity: 0;
   transition: opacity 1s ease-in-out;
@@ -324,6 +323,7 @@
 .cont-carrusel .selectores {
   height: 2rem;
   width: 100%;
+  z-index: 1;
 }
 .cont-carrusel .selectores .puntos {
   display: flex;
@@ -452,7 +452,7 @@
 
 .btn-mov {
   position: absolute;
-  width: 33.3333333333%;
+  width: 100%;
   display: flex;
   height: 100%;
   justify-content: space-between;
@@ -477,18 +477,21 @@
   position: relative;
   margin-top: 2rem;
   display: flex;
-  width: 300%;
+  width: auto;
+  overflow: hidden;
 }
 .planes-hogar .contenedor-carrusel {
-  position: relative;
-  width: 100%;
   display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
 }
 .planes-hogar .contenedor-carrusel .container-plan {
-  width: 33.3333333333%;
+  overflow: hidden;
+  width: 83%;
   display: flex;
-  justify-content: space-around;
-  padding: 0 6rem;
+  gap: 5rem;
+  padding: 0 1rem;
 }
 
 main {
@@ -521,7 +524,6 @@ main {
 
 .carrusel-hogar {
   position: relative;
-  height: 55vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

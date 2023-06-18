@@ -48,34 +48,42 @@ document.addEventListener('DOMContentLoaded', function() {
 var iteration = 0;
 const next = document.querySelector('.btn-right');
 const previous = document.querySelector('.btn-left');
-const container = document.querySelector('.contenedor-carrusel');
-const recorrido = -(100 / 3);
+const container = document.getElementsByClassName('plan-card-dsc');
+const tarjeta = document.querySelector('.plan-card-dsc');
+const recorrido = -120;
 var conteo = 0;
+
+
 
 next.addEventListener('click', function(){
   nextSlide();
 })
 
   function nextSlide(){
-    if (iteration >1 ){
-      conteo = 1;
+    if (iteration > 5 ){
+      conteo = 4;
     } else{
       conteo = iteration +1;
-      let operation = conteo * recorrido;
-      container.style.transform = `translateX(${operation}%)`;
-      iteration = conteo;
+      for (var i = 0; i< container.length; i++){  
+        var posicion = container[i];
+        let operation = conteo * recorrido;
+        posicion.style.transform = `translateX(${operation}%)`;
+        iteration = conteo;
     }
-    
-  }
+      }
+    }
 
 function previousSlide(){
-  if (iteration < 0){
+  if (iteration < 1){
     conteo = 0;
   } else{
-  conteo = iteration -1;
-  let operation = iteration * recorrido;
-  container.style.transform = `translateX(${operation}%)`;
-  iteration = conteo;
+    conteo = iteration -1;
+    for (var i = 0; i< container.length; i++){  
+      var posicion = container[i];
+      let operation = conteo * recorrido;
+      posicion.style.transform = `translateX(${operation}%)`;
+      iteration = conteo;
+  }
 }
 }
 
