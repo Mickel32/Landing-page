@@ -1,6 +1,6 @@
 let ancho = document.documentElement.clientWidth;
 const bannerpromo= document.getElementById("bannerpromo");
-
+const bannerplan = document.getElementById("container-plan");
 
 
 window.addEventListener('resize', function(resize){
@@ -15,4 +15,3 @@ window.onload = function(){
     bannerpromo.style.height= (anchura / 2.9) + "px";
 }
 
-// resize();
