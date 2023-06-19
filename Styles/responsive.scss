@@ -1,0 +1,50 @@
+@media (min-width:1200px) and (max-width:1295px){
+    .container-plan{
+        gap: 5rem;
+        width: 75%;
+    }
+} 
+
+@media (min-width:1296px) and (max-width:1335px){
+    .container-plan{
+        gap: 5rem;
+        width: 73%;
+    }
+}
+
+@media (min-width:1336px) and (max-width:1385px){
+    .container-plan{
+        gap: 5rem;
+        width: 70%;
+    }
+}
+
+@media (min-width:1386px) and (max-width:1500px){
+    .container-plan{
+        gap: 5rem;
+        width: 60%;
+    }
+    .plan-card-dsc{
+        width: 21rem;
+    }
+}
+
+@media (min-width:1501px) and (max-width:1600px){
+    .container-plan{
+        gap: 4.5rem;
+        width: 83%;
+    }
+    .plan-card-dsc{
+        width: 22rem;
+    }
+}
+
+@media (min-width:1601px) and (max-width:1700px){
+    .container-plan{
+        gap: 3rem;
+        width: 83%;
+    }
+    .plan-card-dsc{
+        width: 25rem;
+    }
+} 

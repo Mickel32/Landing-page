@@ -28,8 +28,16 @@
   box-shadow: 0 0 1rem #E4242D;
 }
 
-.container-plan1 {
-  display: none;
+.btn-left {
+  top: 50%;
+  left: 4rem;
+  z-index: 1;
+}
+
+.btn-right {
+  top: 50%;
+  left: 100rem;
+  z-index: 1;
 }
 
 .plan-card-dsc {
@@ -120,17 +128,13 @@
   margin-top: -1rem;
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 .plan-card-dsc .value .img-promo .text-promo {
   line-height: 1.2rem;
   font-size: 1.5rem;
   color: #E4242D;
   font-weight: 800;
-}
-.plan-card-dsc .value .img-promo img {
-  width: 100%;
-  height: 40%;
 }
 .plan-card-dsc .value .value-promo {
   padding: 0 1.5rem;
@@ -227,14 +231,311 @@
   font-size: 1.2rem;
 }
 
-.planes-hogar {
-  margin-top: 2rem;
+.benefits .titulo {
   display: flex;
   justify-content: center;
 }
-.planes-hogar .container-plan {
+.benefits .titulo h2 {
+  color: #ffffff;
+  border-radius: 0 0 1rem 1rem;
+  padding: 0.2rem 1rem;
+  background-color: #E4242D;
+}
+.benefits .adicionales {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.benefits .adicionales .contenido {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+}
+.benefits .adicionales .contenido img {
+  width: 7rem;
+}
+.benefits .adicionales .contenido p {
+  font-weight: 500;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  text-decoration: underline;
+}
+.benefits .adicionales .claro-video img {
+  width: 10rem;
+}
+
+.pie-cta .text-pie {
+  height: 6rem;
+  padding: 0;
+}
+.pie-cta .text-pie p {
+  font-size: 4rem;
+  color: #ffffff;
+  font-weight: 600;
+  animation: glowing 2s linear infinite;
+}
+.pie-cta .btn-main {
+  font-size: 1.6rem;
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 1px 1px 0px #ffffff;
+  }
+  25% {
+    text-shadow: 1px 1px 5px #ffffff;
+  }
+  50% {
+    text-shadow: 1px 1px 10px #ffffff;
+  }
+  75% {
+    text-shadow: 1px 1px 5px #ffffff;
+  }
+  100% {
+    text-shadow: 1px 1px 0px #ffffff;
+  }
+}
+.cont-carrusel {
+  width: 100%;
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cont-carrusel .imagenes {
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+.cont-carrusel .imagenes img {
+  width: 95%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.cont-carrusel .imagenes .img.activo {
+  opacity: 1;
+}
+.cont-carrusel .selectores {
+  height: 2rem;
+  width: 100%;
+  z-index: 1;
+}
+.cont-carrusel .selectores .puntos {
   display: flex;
   flex-direction: row;
-  width: 80%;
-  justify-content: space-around;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.cont-carrusel .selectores .puntos .punto {
+  border-radius: 2rem;
+  width: 1rem;
+  height: 1rem;
+  border: solid 1px rgb(187, 187, 187);
+}
+.cont-carrusel .selectores .puntos .punto.activo {
+  background-color: #E4242D;
+}
+
+.contactanos-form {
+  background-color: rgba(255, 255, 255, 0.7921568627);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 6rem;
+  right: 3rem;
+  width: 28rem;
+  height: 23rem;
+  z-index: 1;
+  border-radius: 1rem;
+  align-items: center;
+}
+.contactanos-form .contactanos {
+  background-color: #E4242D;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  border: solid 1px #E4242D;
+}
+.contactanos-form .contactanos:hover {
+  border: solid 1px #E4242D;
+  background-color: #ffffff;
+  color: #E4242D;
+  box-shadow: 0 0 1rem #E4242D;
+}
+.contactanos-form .contenido {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactanos-form .contenido img {
+  height: 100%;
+}
+.contactanos-form .contenido .text-cont {
+  display: flex;
+  flex-direction: column;
+}
+.contactanos-form .contenido .text-cont .text1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.contactanos-form .contenido .text-cont p {
+  margin: 0;
+  text-align: center;
+  font-size: 1rem;
+}
+.contactanos-form input {
+  width: 85%;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  text-align: center;
+  border: none;
+  background-color: #aeaeae;
+  color: #ffffff;
+}
+.contactanos-form input::-moz-placeholder {
+  color: #ffffff;
+}
+.contactanos-form input::placeholder {
+  color: #ffffff;
+}
+.contactanos-form .contactanos {
+  margin-top: 0.7rem;
+  font-size: 1.5rem;
+}
+.contactanos-form .terminos {
+  margin-top: 1.5rem;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+.contactanos-form .titulo {
+  padding: 0.2rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem 1rem 0 0;
+  height: 4rem;
+  width: 100%;
+  background-color: #E4242D;
+}
+.contactanos-form .titulo h3 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.redes {
+  z-index: 1;
+  height: 2rem;
+  right: 0.5rem;
+  top: 70vh;
+  position: fixed;
+}
+.redes img {
+  width: 3rem;
+}
+.redes a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000000;
+}
+.redes a p {
+  font-size: 0.8rem;
+}
+
+.btn-mov {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+.btn-mov .carrusel-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: #494B4D;
+  color: #ffffff;
+  border-radius: 100%;
+  font-size: 3rem;
+  padding: 0 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.planes-hogar {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  width: auto;
+  overflow: hidden;
+}
+.planes-hogar .contenedor-carrusel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+.planes-hogar .contenedor-carrusel .container-plan {
+  overflow: hidden;
+  width: 83%;
+  display: flex;
+  gap: 5rem;
+  padding: 0 1rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-width: 1700px;
+  overflow: hidden;
+}
+
+.benefits {
+  border-top: solid 0.1rem black;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pie-cta {
+  background-color: rgba(0, 0, 0, 0.9019607843);
+  height: 7rem;
+  margin-top: 2rem;
+  align-items: center;
+  padding: 0 4rem;
+  gap: 6rem;
+  display: flex;
+  justify-content: end;
+}
+
+.carrusel-hogar {
+  position: relative;
+}
+
+@media (max-width: 1600px) {
+  .container-plan {
+    gap: 1rem;
+  }
 }/*# sourceMappingURL=index.css.map */
