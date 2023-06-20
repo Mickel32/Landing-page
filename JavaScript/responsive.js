@@ -27,15 +27,15 @@ var recorrido = 0;
 var conteo = 0;
 
 switch (true){
-    case (ancho > 999 && ancho< 1120):
-        recorrido = -121.7;
-        break; 
     case (ancho > 1119 && ancho< 1165):
         recorrido = -121.7;
         break; 
     case (ancho > 1164 && ancho< 1260):
         recorrido = -120.8;
         break; 
+        case (ancho > 1260 && ancho< 1435):
+          recorrido = -120.8;
+          break;
     case (ancho > 1434 && ancho< 1510):
         recorrido = -123;
         break; 
@@ -65,12 +65,10 @@ next.addEventListener('click', function(){
   function nextSlide(){
     if (iteration > 5 && ancho > 1614){
       conteo = 4;
-    } else if(iteration > 6 && (ancho < 1550 && ancho > 1120)){
+    } else if(iteration > 6 && ancho < 1550){
         conteo = 5;
       } else if(iteration > 5 && (ancho < 1615 && ancho > 1549)){
         conteo = 4;
-      } else if(iteration > 7 && (ancho < 1120 && ancho > 999)){
-        conteo = 6;
       } else{
       conteo = iteration +1;
       for (var i = 0; i< container.length; i++){  
