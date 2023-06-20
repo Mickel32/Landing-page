@@ -34,7 +34,7 @@ switch (true){
         recorrido = -120.8;
         break; 
         case (ancho > 1260 && ancho< 1435):
-          recorrido = -120.8;
+          recorrido = -119.95;
           break;
     case (ancho > 1434 && ancho< 1510):
         recorrido = -123;
