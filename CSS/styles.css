@@ -645,7 +645,7 @@ main {
     width: 25rem;
   }
 }
-@media (min-width: 1440px) and (max-width: 1700px) {
+@media (min-width: 1440px) and (max-width: 1900px) {
   .text-pie p {
     font-size: 4rem;
   }
