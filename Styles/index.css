@@ -43,7 +43,6 @@
 .plan-card-dsc {
   display: flex;
   flex-direction: column;
-  width: 25rem;
   height: 35rem;
   border: none;
   border-radius: 0.5rem;
@@ -491,9 +490,7 @@
 }
 .planes-hogar .contenedor-carrusel .container-plan {
   overflow: hidden;
-  width: 83%;
   display: flex;
-  gap: 5rem;
   padding: 0 1rem;
 }
 
@@ -534,8 +531,48 @@ main {
   position: relative;
 }
 
-@media (max-width: 1600px) {
+@media (min-width: 1200px) and (max-width: 1295px) {
   .container-plan {
-    gap: 1rem;
+    gap: 5rem;
+    width: 75%;
+  }
+}
+@media (min-width: 1296px) and (max-width: 1335px) {
+  .container-plan {
+    gap: 5rem;
+    width: 73%;
+  }
+}
+@media (min-width: 1336px) and (max-width: 1385px) {
+  .container-plan {
+    gap: 5rem;
+    width: 70%;
+  }
+}
+@media (min-width: 1386px) and (max-width: 1500px) {
+  .container-plan {
+    gap: 5rem;
+    width: 60%;
+  }
+  .plan-card-dsc {
+    width: 21rem;
+  }
+}
+@media (min-width: 1501px) and (max-width: 1600px) {
+  .container-plan {
+    gap: 2.5rem;
+    width: 80%;
+  }
+  .plan-card-dsc {
+    width: 23rem;
+  }
+}
+@media (min-width: 1695px) and (max-width: 1900px) {
+  .container-plan {
+    gap: 5rem;
+    width: 82%;
+  }
+  .plan-card-dsc {
+    width: 25rem;
   }
 }/*# sourceMappingURL=index.css.map */

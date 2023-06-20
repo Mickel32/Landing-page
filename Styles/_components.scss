@@ -74,7 +74,6 @@ $color-secundary:#ffffff;
 .plan-card-dsc{
     display: flex;
     flex-direction: column;
-    // width: 25rem;
     height: 35rem;
     border:none;
     border-radius: .5rem;
@@ -241,14 +240,15 @@ $color-secundary:#ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 30rem;
-            img{
-                width: 7rem;
-            }
+            // width: 30rem;
+            // img{
+            //     width: 7rem;
+            // }
             p{
+                z-index: 0;
                 font-weight: 500;
                 text-align: center;
-                font-size: 2rem;
+                // font-size: 2rem;
                 font-style: italic;
                 text-decoration: underline;
             }
@@ -263,11 +263,7 @@ $color-secundary:#ffffff;
 
 .pie-cta{
     .text-pie{
-        height: 6rem;
-        padding: 0;
-
         p{
-            font-size: 4rem;
             color: $color-secundary;
             font-weight: 600;
             animation: glowing 2s linear infinite;
@@ -321,8 +317,6 @@ $color-secundary:#ffffff;
             list-style: none;   
             .punto{
                 border-radius: 2rem;
-                width: 1rem;
-                height: 1rem;
                 border: solid 1px rgb(187, 187, 187);
             }
             .punto.activo{
@@ -337,10 +331,7 @@ $color-secundary:#ffffff;
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 6rem;
     right: 3rem;
-    width: 28rem;
-    height: 23rem;
     z-index: 1;
     border-radius: 1rem;
     align-items: center;
@@ -349,7 +340,6 @@ $color-secundary:#ffffff;
     }
     .contenido{
         width: 100%;
-        height: 10rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -360,13 +350,13 @@ $color-secundary:#ffffff;
             display: flex;
             flex-direction: column;
             .text1{
-                font-size: 1.8rem;
+                // font-size: 1.8rem;
                 font-weight: bold;
             }
             p{
                 margin: 0;
                 text-align: center;
-                font-size: 1rem;
+                // font-size: 1rem;
             }
         }
         
@@ -385,11 +375,10 @@ $color-secundary:#ffffff;
     }
     .contactanos{
         margin-top: .7rem;
-        font-size: 1.5rem;
     }
     .terminos{
-        margin-top: 1.5rem;
-        font-size: .5rem;
+        // margin-top: 1.5rem;
+        // font-size: .5rem;
         font-weight: 600;
     }
     .titulo{
@@ -402,7 +391,6 @@ $color-secundary:#ffffff;
         width: 100%;
         background-color: $color-main;
         h3{
-            font-size: 2.5rem;
             color: $color-secundary;
         }
     }

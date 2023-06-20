@@ -251,15 +251,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30rem;
-}
-.benefits .adicionales .contenido img {
-  width: 7rem;
 }
 .benefits .adicionales .contenido p {
+  z-index: 0;
   font-weight: 500;
   text-align: center;
-  font-size: 2rem;
   font-style: italic;
   text-decoration: underline;
 }
@@ -267,12 +263,7 @@
   width: 10rem;
 }
 
-.pie-cta .text-pie {
-  height: 6rem;
-  padding: 0;
-}
 .pie-cta .text-pie p {
-  font-size: 4rem;
   color: #ffffff;
   font-weight: 600;
   animation: glowing 2s linear infinite;
@@ -335,8 +326,6 @@
 }
 .cont-carrusel .selectores .puntos .punto {
   border-radius: 2rem;
-  width: 1rem;
-  height: 1rem;
   border: solid 1px rgb(187, 187, 187);
 }
 .cont-carrusel .selectores .puntos .punto.activo {
@@ -348,10 +337,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 6rem;
   right: 3rem;
-  width: 28rem;
-  height: 23rem;
   z-index: 1;
   border-radius: 1rem;
   align-items: center;
@@ -370,7 +356,6 @@
 }
 .contactanos-form .contenido {
   width: 100%;
-  height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,13 +368,11 @@
   flex-direction: column;
 }
 .contactanos-form .contenido .text-cont .text1 {
-  font-size: 1.8rem;
   font-weight: bold;
 }
 .contactanos-form .contenido .text-cont p {
   margin: 0;
   text-align: center;
-  font-size: 1rem;
 }
 .contactanos-form input {
   width: 85%;
@@ -405,11 +388,8 @@
 }
 .contactanos-form .contactanos {
   margin-top: 0.7rem;
-  font-size: 1.5rem;
 }
 .contactanos-form .terminos {
-  margin-top: 1.5rem;
-  font-size: 0.5rem;
   font-weight: 600;
 }
 .contactanos-form .titulo {
@@ -423,7 +403,6 @@
   background-color: #E4242D;
 }
 .contactanos-form .titulo h3 {
-  font-size: 2.5rem;
   color: #ffffff;
 }
 
@@ -500,7 +479,6 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0;
   max-width: 1700px;
   overflow: hidden;
 }
@@ -526,18 +504,64 @@ main {
 
 .carrusel-hogar {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-@media (min-width: 1200px) and (max-width: 1295px) {
+@media (min-width: 500px) and (max-width: 999px) {
+  .container-plan {
+    gap: 5rem;
+    width: 50%;
+  }
+  .plan-card-dsc {
+    width: 23rem;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1119px) {
+  .container-plan {
+    gap: 5rem;
+    width: 40%;
+  }
+  .plan-card-dsc {
+    width: 23rem;
+  }
+}
+@media (min-width: 1120px) and (max-width: 1164px) {
   .container-plan {
     gap: 5rem;
     width: 75%;
   }
+  .plan-card-dsc {
+    width: 23rem;
+  }
 }
-@media (min-width: 1296px) and (max-width: 1335px) {
+@media (min-width: 1165px) and (max-width: 1239px) {
   .container-plan {
     gap: 5rem;
-    width: 73%;
+    width: 75%;
+  }
+  .plan-card-dsc {
+    width: 24rem;
+  }
+}
+@media (min-width: 1240px) and (max-width: 1259px) {
+  .container-plan {
+    gap: 5rem;
+    width: 70%;
+  }
+  .plan-card-dsc {
+    width: 24rem;
+  }
+}
+@media (min-width: 1260px) and (max-width: 1289px) {
+  .container-plan {
+    gap: 5rem;
+    width: 75%;
+  }
+  .plan-card-dsc {
+    width: 25rem;
   }
 }
 @media (min-width: 1336px) and (max-width: 1385px) {
@@ -545,32 +569,357 @@ main {
     gap: 5rem;
     width: 70%;
   }
+  .plan-card-dsc {
+    width: 25rem;
+  }
 }
-@media (min-width: 1386px) and (max-width: 1500px) {
+@media (min-width: 1290px) and (max-width: 1334px) {
+  .container-plan {
+    gap: 5rem;
+    width: 70%;
+  }
+  .plan-card-dsc {
+    width: 25rem;
+  }
+}
+@media (min-width: 1335px) and (max-width: 1390px) {
+  .container-plan {
+    gap: 5rem;
+    width: 68%;
+  }
+  .plan-card-dsc {
+    width: 25rem;
+  }
+}
+@media (min-width: 1390px) and (max-width: 1434px) {
+  .container-plan {
+    gap: 5rem;
+    width: 65%;
+  }
+  .plan-card-dsc {
+    width: 25rem;
+  }
+}
+@media (min-width: 1435px) and (max-width: 1509px) {
+  .container-plan {
+    gap: 5rem;
+    width: 63%;
+  }
+  .plan-card-dsc {
+    width: 25rem;
+  }
+}
+@media (min-width: 1510px) and (max-width: 1549px) {
   .container-plan {
     gap: 5rem;
     width: 60%;
   }
   .plan-card-dsc {
-    width: 21rem;
+    width: 25rem;
   }
 }
-@media (min-width: 1501px) and (max-width: 1600px) {
+@media (min-width: 1550px) and (max-width: 1614px) {
   .container-plan {
-    gap: 4.5rem;
+    gap: 5rem;
     width: 83%;
   }
   .plan-card-dsc {
-    width: 22rem;
+    width: 23rem;
   }
 }
-@media (min-width: 1601px) and (max-width: 1700px) {
+@media (min-width: 1615px) and (max-width: 1669px) {
   .container-plan {
-    gap: 3rem;
+    gap: 5rem;
+    width: 83%;
+  }
+  .plan-card-dsc {
+    width: 24rem;
+  }
+}
+@media (min-width: 1670px) and (max-width: 1900px) {
+  .container-plan {
+    gap: 5rem;
     width: 83%;
   }
   .plan-card-dsc {
     width: 25rem;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1700px) {
+  .text-pie p {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1301px) and (max-width: 1439px) {
+  .text-pie p {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1167px) and (max-width: 1300px) {
+  .text-pie p {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1143px) and (max-width: 1166px) {
+  .text-pie p {
+    font-size: 2.9rem;
+  }
+}
+@media (min-width: 1120px) and (max-width: 1142px) {
+  .text-pie p {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1119px) {
+  .text-pie p {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 999px) {
+  .text-pie p {
+    font-size: 1.63rem;
+  }
+}
+@media (min-width: 1560px) and (max-width: 1900px) {
+  .contactanos-form {
+    width: 28rem;
+    height: 23rem;
+  }
+  .contactanos-form .text1 {
+    font-size: 1.8rem;
+  }
+  .contactanos-form .terminos {
+    margin-top: 1.5rem;
+    font-size: 0.5rem;
+  }
+  .contactanos-form .contenido {
+    height: 10rem;
+  }
+  .contactanos-form h3 {
+    font-size: 2.5rem;
+  }
+  .contactanos-form .contactanos {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1559px) {
+  .contactanos-form {
+    width: 23rem;
+    height: 21rem;
+  }
+  .contactanos-form .text1 {
+    font-size: 1.5rem;
+  }
+  .contactanos-form .text2 {
+    font-size: 1rem;
+  }
+  .contactanos-form p {
+    text-align: center;
+    font-size: 0.5rem;
+  }
+  .contactanos-form .terminos {
+    padding-left: 0.4rem;
+    margin-top: 0.7rem;
+  }
+  .contactanos-form .contenido {
+    height: 10rem;
+  }
+  .contactanos-form h3 {
+    font-size: 2.5rem;
+  }
+  .contactanos-form .contactanos {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .contactanos-form {
+    width: 20rem;
+    height: 17rem;
+  }
+  .contactanos-form .text1 {
+    font-size: 1.2rem;
+  }
+  .contactanos-form .text2 {
+    font-size: 0.7rem;
+  }
+  .contactanos-form p {
+    text-align: center;
+    font-size: 0.5rem;
+  }
+  .contactanos-form .terminos {
+    padding-left: 0.4rem;
+    margin-top: 0.7rem;
+  }
+  .contactanos-form .contenido {
+    height: 7rem;
+  }
+  .contactanos-form h3 {
+    font-size: 2rem;
+  }
+  .contactanos-form .contactanos {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1120px) and (max-width: 1299px) {
+  .contactanos-form {
+    width: 18rem;
+    height: 17rem;
+  }
+  .contactanos-form .text1 {
+    font-size: 1.2rem;
+  }
+  .contactanos-form .text2 {
+    font-size: 0.7rem;
+  }
+  .contactanos-form p {
+    text-align: center;
+    font-size: 0.5rem;
+  }
+  .contactanos-form .terminos {
+    padding-left: 0.4rem;
+    margin-top: 0.7rem;
+  }
+  .contactanos-form .contenido {
+    height: 6rem;
+  }
+  .contactanos-form h3 {
+    font-size: 1.2rem;
+  }
+  .contactanos-form .contactanos {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1099px) {
+  .contactanos-form {
+    width: 17rem;
+    height: 15rem;
+  }
+  .contactanos-form .text1 {
+    font-size: 1rem;
+  }
+  .contactanos-form .text2 {
+    font-size: 0.6rem;
+  }
+  .contactanos-form p {
+    text-align: center;
+    font-size: 0.5rem;
+  }
+  .contactanos-form .terminos {
+    padding-left: 0.4rem;
+    margin-top: 0.7rem;
+  }
+  .contactanos-form .contenido {
+    height: 6rem;
+  }
+  .contactanos-form h3 {
+    font-size: 1.2rem;
+  }
+  .contactanos-form .contactanos {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1900px) {
+  .selectores .punto {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .selectores .punto {
+    margin-top: 0.3rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+}
+@media (min-width: 1120px) and (max-width: 1299px) {
+  .selectores .punto {
+    margin-top: 0.3rem;
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1119px) {
+  .selectores .punto {
+    margin-top: 0.6rem;
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 999px) {
+  .selectores .punto {
+    margin-top: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1900px) {
+  .adicionales .contenido {
+    width: 30rem;
+  }
+  .adicionales img {
+    width: 7rem;
+  }
+  .adicionales p {
+    font-size: 2rem;
+  }
+  .adicionales .claro-video img {
+    margin-top: -2rem;
+  }
+}
+@media (min-width: 1215px) and (max-width: 1399px) {
+  .adicionales .contenido {
+    width: 25rem;
+  }
+  .adicionales img {
+    width: 5rem;
+  }
+  .adicionales p {
+    font-size: 1.7rem;
+  }
+  .adicionales .claro-video img {
+    margin-top: -2rem;
+  }
+}
+@media (min-width: 1120px) and (max-width: 1214px) {
+  .adicionales .contenido {
+    width: 20rem;
+  }
+  .adicionales img {
+    width: 4rem;
+  }
+  .adicionales p {
+    font-size: 1.5rem;
+  }
+  .adicionales .claro-video img {
+    margin-top: -2rem;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1119px) {
+  .adicionales .contenido {
+    width: 20rem;
+  }
+  .adicionales img {
+    width: 5rem;
+  }
+  .adicionales p {
+    font-size: 1.5rem;
+  }
+  .adicionales .claro-video img {
+    margin-top: -2rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 999px) {
+  .adicionales .contenido {
+    width: 20rem;
+  }
+  .adicionales img {
+    width: 6rem;
+  }
+  .adicionales p {
+    font-size: 1.7rem;
+  }
+  .adicionales .claro-video img {
+    margin-top: -2rem;
   }
 }
 

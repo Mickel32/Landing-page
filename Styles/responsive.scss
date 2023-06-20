@@ -1,50 +1,505 @@
-@media (min-width:1200px) and (max-width:1295px){
+//banner planes
+
+@media (min-width:500px) and (max-width:999px){
+    .container-plan{
+        gap: 5rem;
+        width: 50%;
+    }
+    .plan-card-dsc{
+        width: 23rem;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1119px){
+    .container-plan{
+        gap: 5rem;
+        width: 40%;
+    }
+    .plan-card-dsc{
+        width: 23rem;
+    }
+}
+
+@media (min-width:1120px) and (max-width:1164px){
     .container-plan{
         gap: 5rem;
         width: 75%;
     }
+    .plan-card-dsc{
+        width: 23rem;
+    }
 } 
 
-@media (min-width:1296px) and (max-width:1335px){
+@media (min-width:1165px) and (max-width:1239px){
     .container-plan{
         gap: 5rem;
-        width: 73%;
+        width: 75%;
     }
-}
+    .plan-card-dsc{
+        width: 24rem;
+    }
+} 
+
+@media (min-width:1240px) and (max-width:1259px){
+    .container-plan{
+        gap: 5rem;
+        width: 70%;
+    }
+    .plan-card-dsc{
+        width: 24rem;
+    }
+} 
+
+@media (min-width:1260px) and (max-width:1289px){
+    .container-plan{
+        gap: 5rem;
+        width: 75%;
+    }
+    .plan-card-dsc{
+        width: 25rem;
+    }
+} 
 
 @media (min-width:1336px) and (max-width:1385px){
     .container-plan{
         gap: 5rem;
         width: 70%;
     }
+    .plan-card-dsc{
+        width: 25rem;
+    }
 }
 
-@media (min-width:1386px) and (max-width:1500px){
+@media (min-width:1290px) and (max-width:1334px){
+    .container-plan{
+        gap: 5rem;
+        width: 70%;
+    }
+    .plan-card-dsc{
+        width: 25rem;
+    }
+}
+
+@media (min-width:1335px) and (max-width:1390px){
+    .container-plan{
+        gap: 5rem;
+        width: 68%;
+    }
+    .plan-card-dsc{
+        width: 25rem;
+    }
+}
+
+@media (min-width:1390px) and (max-width:1434px){
+    .container-plan{
+        gap: 5rem;
+        width: 65%;
+    }
+    .plan-card-dsc{
+        width: 25rem;
+    }
+}
+
+@media (min-width:1435px) and (max-width:1509px){
+    .container-plan{
+        gap: 5rem;
+        width: 63%;
+    }
+    .plan-card-dsc{
+        width: 25rem;
+    }
+}
+
+@media (min-width:1510px) and (max-width:1549px){
     .container-plan{
         gap: 5rem;
         width: 60%;
     }
     .plan-card-dsc{
-        width: 21rem;
+        width: 25rem;
     }
 }
 
-@media (min-width:1501px) and (max-width:1600px){
+@media (min-width:1550px) and (max-width:1614px){
     .container-plan{
-        gap: 4.5rem;
+        gap: 5rem;
         width: 83%;
     }
     .plan-card-dsc{
-        width: 22rem;
+        width: 23rem;
     }
 }
 
-@media (min-width:1601px) and (max-width:1700px){
+@media (min-width:1615px) and (max-width:1669px){
     .container-plan{
-        gap: 3rem;
+        gap: 5rem;
+        width: 83%;
+    }
+    .plan-card-dsc{
+        width: 24rem;
+    }
+}
+
+@media (min-width:1670px) and (max-width:1900px){
+    .container-plan{
+        gap: 5rem;
         width: 83%;
     }
     .plan-card-dsc{
         width: 25rem;
     }
 } 
+
+//footer
+
+@media (min-width:1440px) and (max-width:1700px){
+    .text-pie{
+        p{
+            font-size: 4rem;
+        }
+    }
+} 
+
+@media (min-width:1301px) and (max-width:1439px){
+    .text-pie{
+        p{
+            font-size: 3.5rem;
+        }
+    }
+} 
+
+
+@media (min-width:1167px) and (max-width:1300px){
+    .text-pie{
+        p{
+            font-size: 3rem;
+        }
+    }
+} 
+
+@media (min-width:1143px) and (max-width:1166px){
+    .text-pie{
+        p{
+            font-size: 2.9rem;
+        }
+    }
+} 
+
+@media (min-width:1120px) and (max-width:1142px){
+    .text-pie{
+        p{
+            font-size: 2.8rem;
+        }
+    }
+} 
+
+@media (min-width:1000px) and (max-width:1119px){
+    .text-pie{
+        p{
+            font-size: 2.3rem;
+        }
+    }
+} 
+
+@media (min-width:500px) and (max-width:999px){
+    .text-pie{
+        p{
+            font-size: 1.63rem;
+        }
+    }
+} 
+
+//form
+
+@media (min-width:1560px) and (max-width:1900px){
+    .contactanos-form{
+        width: 28rem;
+        height: 23rem;
+        .text1{
+            font-size: 1.8rem;
+        }
+        .terminos{
+            margin-top: 1.5rem;
+            font-size: .5rem;
+        }
+        .contenido{
+            height: 10rem;
+        }
+        h3{
+            font-size: 2.5rem;
+        }
+        .contactanos{
+            font-size: 1.5rem;
+        }
+    }
+    
+} 
+
+@media (min-width:1400px) and (max-width:1559px){
+    .contactanos-form{
+        width: 23rem;
+        height: 21rem;
+        .text1{
+            font-size: 1.5rem;
+        }
+        .text2{
+            font-size: 1rem;
+        }
+        p{
+            text-align: center;
+            font-size: .5rem;
+        }
+        .terminos{
+            padding-left: .4rem;
+            margin-top: .7rem;
+        }
+        .contenido{
+            height: 10rem;
+        }
+        h3{
+            font-size: 2.5rem;
+        }
+        .contactanos{
+            font-size: 1.5rem;
+        }
+    }
+} 
+
+@media (min-width:1300px) and (max-width:1399px){
+    .contactanos-form{
+        width: 20rem;
+        height: 17rem;
+        .text1{
+            font-size: 1.2rem;
+        }
+        .text2{
+            font-size: .7rem;
+        }
+        p{
+            text-align: center;
+            font-size: .5rem;
+        }
+        .terminos{
+            padding-left: .4rem;
+            margin-top: .7rem;
+        }
+        .contenido{
+            height: 7rem;
+        }
+        h3{
+            font-size: 2rem;
+        }
+        .contactanos{
+            font-size: 1.3rem;
+        }
+    }
+} 
+
+@media (min-width:1120px) and (max-width:1299px){
+    .contactanos-form{
+        width: 18rem;
+        height: 17rem;
+        .text1{
+            font-size: 1.2rem;
+        }
+        .text2{
+            font-size: .7rem;
+        }
+        p{
+            text-align: center;
+            font-size: .5rem;
+        }
+        .terminos{
+            padding-left: .4rem;
+            margin-top: .7rem;
+        }
+        .contenido{
+            height: 6rem;
+        }
+        h3{
+            font-size: 1.2rem;
+        }
+        .contactanos{
+            font-size: 1.3rem;
+        }
+    }
+} 
+@media  (max-width:1099px){
+    .contactanos-form{
+        width: 17rem;
+        height: 15rem;
+        .text1{
+            font-size: 1rem;
+        }
+        .text2{
+            font-size: .6rem;
+        }
+        p{
+            text-align: center;
+            font-size: .5rem;
+        }
+        .terminos{
+            padding-left: .4rem;
+            margin-top: .7rem;
+        }
+        .contenido{
+            height: 6rem;
+        }
+        h3{
+            font-size: 1.2rem;
+        }
+        .contactanos{
+            font-size: 1.3rem;
+        }
+    }
+} 
+
+//puntos guia
+
+@media (min-width:1400px) and (max-width:1900px){
+    .selectores{
+        .punto{
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+} 
+
+@media (min-width:1300px) and (max-width:1399px){
+    .selectores{
+        .punto{
+            margin-top: .3rem;
+            width: .8rem;
+            height: .8rem;
+        }
+    }
+} 
+
+@media (min-width:1120px) and (max-width:1299px){
+    .selectores{
+        .punto{
+            margin-top: .3rem;
+            width: .7rem;
+            height: .7rem;
+        }
+    }
+} 
+
+@media (min-width:1000px) and (max-width:1119px){
+    .selectores{
+        .punto{
+            margin-top: .6rem;
+            width: .7rem;
+            height: .7rem;
+        }
+    }
+} 
+
+@media (min-width:500px) and (max-width:999px){
+    .selectores{
+        .punto{
+            margin-top: .8rem;
+            width: .7rem;
+            height: .7rem;
+        }
+    }
+} 
+
+//banner adicionales
+
+@media (min-width:1400px) and (max-width:1900px){
+    .adicionales{
+        .contenido{
+            width: 30rem;
+        }
+        img{
+            width: 7rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+        .claro-video{
+            img{
+                margin-top: -2rem; 
+            }
+        }
+    }
+} 
+
+@media (min-width:1215px) and (max-width:1399px){
+    .adicionales{
+        .contenido{
+            width: 25rem;
+        }
+        img{
+            width: 5rem;
+        }
+        p{
+            font-size: 1.7rem;
+        }
+        .claro-video{
+            img{
+                margin-top: -2rem; 
+            }
+        }
+    }
+} 
+
+@media (min-width:1120px) and (max-width:1214px){
+    .adicionales{
+        .contenido{
+            width: 20rem;
+        }
+        img{
+            width: 4rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        .claro-video{
+            img{
+                margin-top: -2rem; 
+            }
+        }
+    }
+} 
+
+@media (min-width:1000px) and (max-width:1119px){
+    .adicionales{
+        .contenido{
+            width: 20rem;
+        }
+        img{
+            width: 5rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        .claro-video{
+            img{
+                margin-top: -2rem; 
+            }
+        }
+    }
+} 
+
+@media (min-width:500px) and (max-width:999px){
+    .adicionales{
+        .contenido{
+            width: 20rem;
+        }
+        img{
+            width: 6rem;
+        }
+        p{
+            font-size: 1.7rem;
+        }
+        .claro-video{
+            img{
+                margin-top: -2rem; 
+            }
+        }
+    }
+} 
+
+

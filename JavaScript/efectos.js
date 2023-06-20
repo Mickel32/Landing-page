@@ -43,53 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
   startTimer();
 });
 
-//Banner de planes
 
-var iteration = 0;
-const next = document.querySelector('.btn-right');
-const previous = document.querySelector('.btn-left');
-const container = document.getElementsByClassName('plan-card-dsc');
-const tarjeta = document.querySelector('.plan-card-dsc');
-const recorrido = -120;
-var conteo = 0;
-
-
-
-next.addEventListener('click', function(){
-  nextSlide();
-})
-
-  function nextSlide(){
-    if (iteration > 5 ){
-      conteo = 4;
-    } else{
-      conteo = iteration +1;
-      for (var i = 0; i< container.length; i++){  
-        var posicion = container[i];
-        let operation = conteo * recorrido;
-        posicion.style.transform = `translateX(${operation}%)`;
-        iteration = conteo;
-    }
-      }
-    }
-
-function previousSlide(){
-  if (iteration < 1){
-    conteo = 0;
-  } else{
-    conteo = iteration -1;
-    for (var i = 0; i< container.length; i++){  
-      var posicion = container[i];
-      let operation = conteo * recorrido;
-      posicion.style.transform = `translateX(${operation}%)`;
-      iteration = conteo;
-  }
-}
-}
-
-previous.addEventListener('click', function(){
-  previousSlide();
-})
 
 
 
