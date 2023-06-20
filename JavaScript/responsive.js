@@ -1,7 +1,9 @@
 let ancho = document.documentElement.clientWidth;
 const bannerpromo= document.getElementById("bannerpromo");
 var iteration = 0;
-
+const modal  = document.getElementById("modal");
+const cierreModal = document.getElementById("modal-cierre")
+var tiempoInactivo = 30000;
 
 
 window.addEventListener('resize', function(resize){
@@ -14,7 +16,29 @@ window.onload = function(){
     bannerpromo.style.width=ancho;
     var anchura = bannerpromo.offsetWidth;
     bannerpromo.style.height= (anchura / 2.9) + "px";
+    modal.style.visibility = `hidden`;
+    reiniciarTiempo();
 }
+
+function ocultarDiv(){
+  modal.style.visibility = `hidden`;
+}
+
+function mostrarDiv(){
+  modal.style.visibility = `visible`;
+};
+
+cierreModal.addEventListener('click', function(){
+  modal.style.visibility = `hidden`;
+  reiniciarTiempo();
+})
+
+function reiniciarTiempo() {
+  clearTimeout(ocultarDiv, tiempoInactivo);
+  setTimeout(mostrarDiv, tiempoInactivo)
+}
+
+  document.onmousemove = reiniciarTiempo;
 
 //Banner de planes
 
